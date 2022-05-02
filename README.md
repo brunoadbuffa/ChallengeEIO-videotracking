@@ -17,7 +17,7 @@ $ docker-compose up
 
 ### Program
 
-This program accepts as **input parameters** the video, which is going to be processed, and a JSON file where the initial position of each of the objects to be tracked is defined. The JSON file contains the bounding box of each object in tuple format *(x, y, width, height)* where x and y represent the coordinates of the pixels in the upper left corner of the bounding box, width and height are the width and height, in pixels, of the bounding box.
+This program accepts as **input parameters** a video, which is going to be processed, and a JSON file where the initial position of each of the objects to be tracked is defined, bothl ocated in the '/data' directory. The JSON file contains the bounding box of each object in tuple format *(x, y, width, height)* where x and y represent the coordinates of the pixels in the upper left corner of the bounding box, width and height are the width and height, in pixels, of the bounding box.
 
 To run the program, the "main.py" file (in directory: '/model') is executed in a docker container. A video is generated as **output** with the data obtained from tracking. This video shows for each frame the bounding boxes obtained for each of the defined objects. By default, the output video is saved in '/data' directory.
 
