@@ -33,3 +33,18 @@ Then the tracking process is initialized in which the initial bounding boxes are
 
 *Note: To get faster and more efficient object tracking, we will need to leverage multiple processes and spread the computational load across 
 multiple cores of our processor.*
+
+### GIT Project Organization
+------------------
+
+    ├── Video Tracking Project                
+    │       ├── data                            <- Code for generating custom images for each step 
+    |       ├── model                           <- Related to custom environments
+    │       │    └── lifecycles                 <- Scripts for creating a persistent conda env inside AWS 
+    │       │               
+    │       │                  
+    │       │                    
+    │       │                     
+    │       ├── notebooks                      <- Jupyter notebooks. Naming convention is a number (for ordering),
+    │       │                                     the creator's initials, and a short `_` delimited description, e.g.
+    │       │                                     `001_jd_something_interesting`
