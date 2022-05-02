@@ -1,0 +1,12 @@
+version: '3.4'
+services:
+  model:
+    image: img1:EIO
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/code
+    entrypoint: [
+      "make", "tracker"
+    ]
