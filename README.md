@@ -1,14 +1,27 @@
 # ChallengeEIO-videotracking
 Repository for video tracking in Python.
 
-In this repository, you can find the python files (.py) to run a program to track different objects in a video.
+In this repository, you can find the files to run a program to track different objects in a video.
 
-The program accepts as **input parameters** the video, which is going to be processed, and a JSON file where the initial position of each of the objects to be tracked is defined. The JSON file contains the bounding box of each object in tuple format *(x, y, width, height)* where x and y represent the coordinates of the pixels in the upper left corner of the bounding box, width and height are the width and height, in pixels, of the bounding box.
+## Docker Build
+```sh
+$ docker-compose build
+```
 
-To run the program, the "main.py" file (in directory: "repository/video_tracking/model") must be executed. A video is generated as output with the data obtained from tracking. This video shows for each frame the bounding boxes obtained for each of the defined objects.
-
+## Docker Up
+```sh
+$ docker-compose build
+```
 
 ## Multiple Object Tracking
+
+### Program
+
+This program accepts as **input parameters** the video, which is going to be processed, and a JSON file where the initial position of each of the objects to be tracked is defined. The JSON file contains the bounding box of each object in tuple format *(x, y, width, height)* where x and y represent the coordinates of the pixels in the upper left corner of the bounding box, width and height are the width and height, in pixels, of the bounding box.
+
+To run the program, the "main.py" file (in directory: "/model") is executed. A video is generated as output with the data obtained from tracking. This video shows for each frame the bounding boxes obtained for each of the defined objects.
+
+### Algorithm
 
 The method followed here to perform the tracking is based on the OpenCV library and its implementation in Python language. In particular, OpenCV version 4.5.5 was used here.
 
