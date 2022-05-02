@@ -38,13 +38,19 @@ multiple cores of our processor.*
 ------------------
 
     ├── Video Tracking Project                
-    │       ├── data                            <- Code for generating custom images for each step 
-    |       ├── model                           <- Related to custom environments
-    │       │    └── lifecycles                 <- Scripts for creating a persistent conda env inside AWS 
+    │       ├── data                       <- Files for program input and the output video.
+    │       │     ├── video input          <- Video for tracking
+    │       │     ├── initial conditions   <- JSON file with the initial info for tracking
+    │       │     └── video tracking       <- Resulting video with trankings  
+    │       ├── model                    
+    │       |     ├── tracker.py           <- Python class with the methods for tracking
+    │       |     └── main.py              <- Main file to execute the program
     │       │               
-    │       │                  
+    │       ├── Dockerfile                 <- Text document with the commands to assemble the docker image 
     │       │                    
-    │       │                     
-    │       ├── notebooks                      <- Jupyter notebooks. Naming convention is a number (for ordering),
-    │       │                                     the creator's initials, and a short `_` delimited description, e.g.
-    │       │                                     `001_jd_something_interesting`
+    │       ├── docker-compose             <- Config file for Docker Compose
+    |       |
+    │       ├── Makefile                   <- File to define the set of commands to run
+    │       │                    
+    │       └── requirements               <- List of packages to build the image with this packages
+
