@@ -8,9 +8,9 @@ The program accepts as **input parameters** the video, which is going to be proc
 To run the program, the "main.py" file (in directory: "repository/video_tracking/model") must be executed. A video is generated as output with the data obtained from tracking. This video shows for each frame the bounding boxes obtained for each of the defined objects.
 
 
-## Algorithm to Multiple Object Tracking
+## Multiple Object Tracking
 
-The algorithm followed here to perform the tracking is based on the OpenCV library and its implementation in Python language. In particular, OpenCV version 4.5.5 was used here.
+The method followed here to perform the tracking is based on the OpenCV library and its implementation in Python language. In particular, OpenCV version 4.5.5 was used here.
 
 First, a Python class was defined to carry out the proposed task. This class is used to create the model in charge of tracking each object, define the output video parameters and pass the inputs of our model (video to be tracked and initial positions of the objects).
 
@@ -18,3 +18,5 @@ Once this is done, we proceed to start with the tracking. To do this, choose the
 
 Then the tracking process is initialized in which the initial bounding boxes are defined for each object to be tracked. This information is passed to the previously defined tracker and the location of the object in the next frame is obtained. This process is iterated until the frames of the video entered as input are consumed.
 
+*Note: To get faster and more efficient object tracking, we will need to leverage multiple processes and spread the computational load across 
+multiple cores of our processor.*
