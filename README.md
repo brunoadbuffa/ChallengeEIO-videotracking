@@ -13,7 +13,7 @@ $ docker-compose build
 $ docker-compose up
 ```
 
-## Multiple Object Tracking
+## Multiple Object Tracking with OpenCV - Python
 
 ### Program
 
