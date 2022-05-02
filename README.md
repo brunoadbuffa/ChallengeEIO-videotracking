@@ -1,14 +1,17 @@
 # ChallengeEIO-VideoTracking
 Repository for video tracking in Python.
 
-In this repository, you can find the files to run a program to track different objects in a video. To do this, the following steps must be carried out:
+In this repository, you can find the files to run a program to track different objects in a video. 
 
-## Docker Build
+## Use
+To execute the program, the following steps must be carried out:
+
+### Docker Build
 ```sh
 $ docker-compose build
 ```
 
-## Run the Program & Save the Output
+### Run the Program & Save the Output
 ```sh
 $ docker-compose up
 ```
