@@ -36,7 +36,7 @@ multiple cores of our processor.*
 
 
 
-### GIT Project Organization
+### GIT Repository Organization
 ------------------
 
     ├── Video Tracking Project                
