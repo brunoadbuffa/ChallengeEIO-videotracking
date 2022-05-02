@@ -39,7 +39,7 @@ multiple cores of our processor.*
 ### GIT Repository Organization
 ------------------
 
-    ├── Video Tracking Project                
+    ├── Video Tracking Repo                
     │       ├── data                       <- Files for program input and the output video.
     │       │     ├── video input          <- Video for tracking
     │       │     ├── initial conditions   <- JSON file with the initial info for tracking
@@ -52,7 +52,7 @@ multiple cores of our processor.*
     │       │                    
     │       ├── docker-compose             <- Config file for Docker Compose
     |       |
-    │       ├── Makefile                   <- File to define the set of commands to run by Docker-Compose for buildind the docker image
+    │       ├── Makefile                   <- File to define the set of commands to run by Docker-Compose for building the docker image
     │       │                    
     │       └── requirements               <- List of packages to build the image with this packages
 
