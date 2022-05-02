@@ -34,6 +34,8 @@ Then the tracking process is initialized in which the initial bounding boxes are
 *Note: To get faster and more efficient object tracking, we will need to leverage multiple processes and spread the computational load across 
 multiple cores of our processor.*
 
+
+
 ### GIT Project Organization
 ------------------
 
@@ -41,16 +43,16 @@ multiple cores of our processor.*
     │       ├── data                       <- Files for program input and the output video.
     │       │     ├── video input          <- Video for tracking
     │       │     ├── initial conditions   <- JSON file with the initial info for tracking
-    │       │     └── video tracking       <- Resulting video with trankings  
+    │       │     └── video tracking       <- Resulting video with trakings  
     │       ├── model                    
-    │       |     ├── tracker.py           <- Python class with the methods for tracking
+    │       |     ├── tracker.py           <- Python class with the methods described in the Algorithm
     │       |     └── main.py              <- Main file to execute the program
     │       │               
     │       ├── Dockerfile                 <- Text document with the commands to assemble the docker image 
     │       │                    
     │       ├── docker-compose             <- Config file for Docker Compose
     |       |
-    │       ├── Makefile                   <- File to define the set of commands to run
+    │       ├── Makefile                   <- File to define the set of commands to run by Docker-Compose for buildind the docker image
     │       │                    
     │       └── requirements               <- List of packages to build the image with this packages
 
