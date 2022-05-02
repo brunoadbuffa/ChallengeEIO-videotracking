@@ -1,4 +1,4 @@
-# ChallengeEIO-videotracking
+# ChallengeEIO-VideoTracking
 Repository for video tracking in Python.
 
 In this repository, you can find the files to run a program to track different objects in a video. To do this, the following steps must be carried out:
