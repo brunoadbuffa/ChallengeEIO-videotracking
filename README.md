@@ -1,4 +1,4 @@
-# ChallengeEIO-VideoTracking
+# VideoTracking
 Repository for video tracking in Python.
 
 ## Use
